@@ -1,0 +1,18 @@
+FiguraGeometrica
+    nombre
+    lados
+    perimetros
+    calcularArea()
+    setters()
+    getters()
+    calcularPerimetro() ->suma de lados
+Cuadrado
+    calcularArea() ->  l*l
+Pentagono
+    perimetro
+    apotema
+    calcularArea() -> p*a/2
+Triángulo
+    base
+    altura
+    calcularArea() -> b*h/2
