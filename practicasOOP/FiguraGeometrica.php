@@ -2,10 +2,11 @@
 abstract class FiguraGeometrica
 {
     private $color;
-    public function __construct($color = null)
+    private $longLado;
+    public function __construct($color = null, $longLado = null)
     {
         $this->color = $color;
-        
+        $this->longLado = $longLado;
     }
     public function setColor($color)
     {
@@ -16,6 +17,15 @@ abstract class FiguraGeometrica
     {
         return $this->color;
     }
+    public function setLongLado($longLado)
+    {
+        $this->longLado = $longLado;
+    }
+    
+    public function getLongLado()
+    {
+        return $this->longLado;
+    }
    
     public function calcularArea()
     {
@@ -24,5 +34,7 @@ abstract class FiguraGeometrica
     public function calcularPerimetro()
     {
         echo "Calculando Perímetro en 3,2,1...<br>";
+
+
     }
 }
